@@ -1,0 +1,137 @@
+:root {
+    --background: linear-gradient(
+        200.96deg,
+        hsl(30, 99%, 58%) -5%,
+        hsl(210, 66%, 60%) 52%,
+        hsl(240, 56%, 40%) 120%
+    );
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div#app {
+    position: absolute;
+    left: 0;
+    top: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background: var(--background);
+    font-family: sans-serif;
+    overflow-y: hidden;
+}
+
+fieldset {
+    display: inline-block;
+    border: 1px solid var(--theme-color-on-screen-opacity-50);
+    background: var(--theme-color-screen-opacity-50);
+    color: var(--theme-color-on-screen);
+    border-radius: 1em;
+}
+
+fieldset.wide {
+    display: block;
+}
+
+fieldset > legend {
+    all: unset;
+    background: transparent;
+    padding: 0;
+}
+
+fieldset > legend > div.custom {
+    margin: 0;
+}
+
+body > div#app {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--theme-color-primary-dark);
+    color: var(--theme-color-on-primary-dark);
+    padding: 0 0.5em;
+    box-shadow: var(--theme-shadow-header);
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 3rem;
+}
+
+header * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 80%;
+    background-color: var(--theme-color-screen);
+    color: var(--theme-color-on-screen-opacity-50);
+    border-left: 0.5em solid var(--theme-color-accent-dark);
+    margin: 0.5em;
+    padding: 0.5em 1em;
+}
+
+button {
+    background: linear-gradient(
+        to left,
+        hsl(30, 99%, 38%) -5%,
+        hsl(210, 66%, 60%) 52%,
+        hsl(240, 56%, 40%) 120%
+    );
+    color: #fff;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-variant: small-caps;
+    font-size: 110%;
+    height: 2em;
+    width: 100%;
+    margin: .5em 0;
+    cursor: pointer;
+    box-shadow: 0 4px 8px #000;
+    transition: all .2s;
+}
+
+button:hover {
+    box-shadow: 0 6px 12px #000;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: 0 1px 2px #000;
+    transform: translateY(3px);
+}
+
+hr {
+    margin: 3em 0;
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-image: linear-gradient(
+        to left,
+        transparent,
+        currentColor,
+        currentColor,
+        transparent
+    );
+}

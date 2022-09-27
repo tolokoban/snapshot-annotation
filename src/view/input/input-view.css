@@ -1,0 +1,20 @@
+.view-InputView {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.view-InputView > label {
+    font-size: 80%;
+    opacity: .5;
+}
+
+.view-InputView > input {
+    box-shadow: 0 2px 4ps #000;
+    border: 0;
+    background-color: #fffe;
+    color: #000e;
+    line-height: 2;
+    padding: 0 .5em;
+} 
