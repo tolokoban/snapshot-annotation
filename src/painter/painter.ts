@@ -186,7 +186,9 @@ export default class Painter {
         ctx.font = `bold ${fontSize}px sans-serif`
         ctx.fillStyle = "#fff"
         const txt = `${point.index}`
-        ctx.fillText(txt, x - ctx.measureText(txt).width / 2, y + fontSize / 2)
+        ctx.textAlign = "center"
+        ctx.textBaseline = "middle"
+        ctx.fillText(txt, x, y)
         ctx.restore()
     }
 }
